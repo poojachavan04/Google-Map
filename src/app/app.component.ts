@@ -9,8 +9,8 @@ import{MarkerClusterer} from "@googlemaps/markerclusterer"
 export class AppComponent implements AfterViewInit {
   @ViewChild("mapContainer") gmap: ElementRef;
   map: google.maps.Map;
-  lat = -34.397;
-  lng = 150.644;
+  lat = -33.87187348896257 ;
+  lng = 151.22994696408978;
 
    locations = [
     { lat: -31.56391, lng: 147.154312 },
@@ -77,8 +77,6 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.mapInitializer();
-    this.addPolygon();
-    this.addClusters();
   }
   
 
@@ -91,79 +89,9 @@ export class AppComponent implements AfterViewInit {
       });
       infoWindow.open(this.marker.getMap(), this.marker);
     });
+    this.marker.setMap(this.map);
   }
 
-  addMarkers(): void {
-    this.markers.forEach(markerInfo => {
-      //Creating a new marker object
-      const marker = new google.maps.Marker({
-        ...markerInfo
-      });
-
-      //creating a new info window with markers info
-      const infoWindow = new google.maps.InfoWindow({
-        content: marker.getTitle()
-      });
-
-      //Add click event to open info window on marker
-      marker.addListener("click", () => {
-        infoWindow.open(marker.getMap(), marker);
-      });
-
-      //Adding marker to google map
-      marker.setMap(this.map);
-    });
-  }
-
-  addPolygon() {
-    const coordinates = [
-      { lat: 25.774, lng: -80.19 },
-      { lat: 18.466, lng: -66.118 },
-      { lat: 32.321, lng: -64.757 },
-      { lat: 25.774, lng: -80.19 },
-    ];
-    // Construct the polygon.
-    const polygon = new google.maps.Polygon({
-      paths: coordinates,
-      strokeColor: "#FF0000",
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: "#FF0000",
-      fillOpacity: 0.35,
-      editable: true,
-      draggable: true,
-    });
-
-    polygon.setMap(this.map);
-  }
-
-  addClusters() {
-    const infoWindow = new google.maps.InfoWindow({
-      content: "",
-      disableAutoPan: true,
-    });
-    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    // Add some markers to the map.
-    const markers = this.locations.map((position, i) => {
-      const label = labels[i % labels.length];
-      const marker = new google.maps.Marker({
-        position,
-        label,
-      });
-
-      // markers can only be keyboard focusable when they have click listeners
-      // open info window when marker is clicked
-      marker.addListener("click", () => {
-        infoWindow.setContent(label);
-        infoWindow.open(this.map, marker);
-      });
-
-      return marker;
-    });
-
-    // Add a marker clusterer to manage the markers.
-    new MarkerClusterer({ markers, map: this.map });
-  }
+  
  
 }
