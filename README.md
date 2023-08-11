@@ -1,11 +1,11 @@
-<img src="https://www.google.com/images/branding/lockups/2x/lockup_maps_color_131x24dp.png" alt="Google Maps" title="Google Map" width="200" height="60"/>&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" title="Angular" alt="Angular" width="60" height="60" style="margin-left:30%"/>&emsp;
+<img src="https://www.google.com/images/branding/lockups/2x/lockup_maps_color_131x24dp.png" alt="Google Maps" title="Google Map" width="200" height="60"/>&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" title="Angular" alt="Angular" width="60" height="60" style="margin-left:30%"/>&emsp;
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
 
 ## Development server
 
-Run ```bash ng serve ``` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
