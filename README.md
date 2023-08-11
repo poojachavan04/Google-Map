@@ -1,7 +1,5 @@
-<img src="https://www.google.com/images/branding/lockups/2x/lockup_maps_color_131x24dp.png" alt="Google Maps" title="Google Map" width="200" height="60"/>&emsp;
-<div style="padding-right:0px; float:right;">
-  <img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" title="Angular" alt="Angular" width="60" height="60" />&emsp;
-</div>
+<img src="https://www.google.com/images/branding/lockups/2x/lockup_maps_color_131x24dp.png" alt="Google Maps" title="Google Map" width="200" height="60"/>&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" title="Angular" alt="Angular" width="60" height="60" style="margin-left:30%"/>&emsp;
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
 
