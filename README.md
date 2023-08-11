@@ -1,4 +1,5 @@
-# GoogleMap
+<img src="https://www.google.com/images/branding/lockups/2x/lockup_maps_color_131x24dp.png" alt="Google Maps" title="Google Map" width="200" height="60"/>&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/angularjs/angularjs-original.svg" title="Angular" alt="Angular" width="60" height="60" style="margin-left:30%"/>&emsp;
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
 
@@ -25,3 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
